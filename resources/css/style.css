@@ -265,11 +265,17 @@ h3 {
 }
 
 /* Mỗi kỹ năng đặt width riêng */
-.skill-fg.html-skill   { width: 40%; }
+/* .skill-fg.html-skill   { width: 40%; }
 .skill-fg.python-skill { width: 65%; }
 .skill-fg.db-skill     { width: 65%; }
 .skill-fg.system-skill { width: 65%; }
-.skill-fg.php-skill    { width: 40%; }
+.skill-fg.php-skill    { width: 40%; } */
+<div class="skill-fg html-skill"></div>
+<div class="skill-fg python-skill"></div>
+<div class="skill-fg db-skill"></div>
+<div class="skill-fg system-skill"></div>
+<div class="skill-fg php-skill"></div>
+
 
 /* Khi in PDF vẫn giữ nguyên */
 @media print {
