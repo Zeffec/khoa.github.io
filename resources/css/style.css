@@ -258,5 +258,24 @@ h3 {
     background: #42a8c0;
     height: 100%;
 }
+/* === Giữ thanh kỹ năng khi in === */
+@media print {
+    /* Giữ màu nền của thanh kỹ năng */
+    .skill-bg {
+        background-color: #eee !important;
+        position: relative;
+        height: 12px !important;
+    }
+    /* Giữ màu và hiển thị của phần trăm */
+    .skill-fg {
+        display: block !important;
+        background-color: #42a8c0 !important;
+        height: 100% !important;
+    }
+    /* Đảm bảo trình duyệt không bỏ width inline (style="width:65%") */
+    .skill-fg[style] {
+        width: inherit !important;
+    }
+}
 
 
