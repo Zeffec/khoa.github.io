@@ -258,24 +258,32 @@ h3 {
     background: #42a8c0;
     height: 100%;
 }
-/* Hiện thanh kỹ năng khi in */
+/* Thanh kỹ năng mặc định cho màn hình */
+.skill-fg {
+    background-color: #42a8c0;
+    height: 12px;
+}
+
+/* Mỗi kỹ năng đặt width riêng */
+.skill-fg.html-skill   { width: 40%; }
+.skill-fg.python-skill { width: 65%; }
+.skill-fg.db-skill     { width: 65%; }
+.skill-fg.system-skill { width: 65%; }
+.skill-fg.php-skill    { width: 40%; }
+
+/* Khi in PDF vẫn giữ nguyên */
 @media print {
-  .skill-bg {
-    background-color: #eee !important;
-    height: 12px !important;
-    position: relative;
-  }
   .skill-fg {
-    background-color: #42a8c0 !important;
     display: inline-block !important;
-    height: 100% !important;
+    height: 12px !important;
+    background-color: #42a8c0 !important;
   }
-  /* ép lại width vì Chrome bỏ style inline */
-  .skill-fg.python { width:65% !important; }
-  .skill-fg.db { width:65% !important; }
-  .skill-fg.system { width:65% !important; }
-  .skill-fg.php { width:40% !important; }
-  .skill-fg.html { width:40% !important; }
+  /* Đảm bảo width không bị mất */
+  .skill-fg.html-skill   { width: 40% !important; }
+  .skill-fg.python-skill { width: 65% !important; }
+  .skill-fg.db-skill     { width: 65% !important; }
+  .skill-fg.system-skill { width: 65% !important; }
+  .skill-fg.php-skill    { width: 40% !important; }
 }
 
 
